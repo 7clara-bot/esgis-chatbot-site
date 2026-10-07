@@ -6,7 +6,8 @@ button{font:inherit;cursor:pointer}
 .topbar{background:var(--navy);color:#fff;font-size:.85rem;padding:12px 40px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .topbar span{margin:0 10px;opacity:.6}.topbar .loc{margin:0;opacity:1}
 .nav{display:flex;justify-content:space-between;align-items:center;padding:14px 40px;background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 1px 0 var(--line)}
-.logo{font-weight:800;font-size:1.8rem;color:var(--red);letter-spacing:-1px}
+.logo{display:flex;align-items:center}
+.logo img{display:block;width:180px;max-width:40vw;height:auto}
 .links{display:flex;align-items:center;gap:30px;font-weight:500}
 .links a.on{color:var(--red)}
 .cta{background:var(--red);color:#fff!important;border:0;border-radius:8px;padding:12px 20px;font-weight:600}
