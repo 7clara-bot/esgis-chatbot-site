@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ - ESGIS Bénin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">
+  <div><a href="mailto:esgis.benin@esgis.org">✉ esgis.benin@esgis.org</a><span>|</span><a href="tel:+22961271313">☎ +229 61 27 13 13</a></div>
+  <span class="loc">Jericho Cotonou – BENIN</span>
+</div>
+<nav class="nav">
+  <a class="logo" href="#">esgis</a><!-- TODO : remplacer par le vrai logo (img) -->
+  <div class="links">
+    <a href="https://www.esgis.bj/">Accueil</a><a href="#faq" class="on">FAQ</a><a href="#contact">Contact</a>
+    <a class="cta" href="https://www.esgis.bj/admission">Préinscription</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <p class="eyebrow gold">QUESTIONS FRÉQUENTES</p>
+  <h1>Toutes vos questions sur l'ESGIS</h1>
+  <p class="sub">Filières, admission, frais, contacts : trouvez votre réponse ici ou demandez à notre assistant virtuel.</p>
+  <div class="searchbox"><input id="search" type="search" placeholder="Rechercher une question…" aria-label="Rechercher dans la FAQ"></div>
+</section>
+
+<main id="faq">
+  <p class="eyebrow red">FAQ</p>
+  <h2>Les réponses à vos questions</h2>
+  <div id="categories" class="chips"></div>
+  <div id="faq-list"></div>
+  <p id="no-result" hidden>Aucun résultat. Posez votre question à l'assistant.</p>
+
+  <div class="help">
+    <h3>Vous ne trouvez pas votre réponse ?</h3>
+    <p>Notre assistant virtuel répond à vos questions sur l'ESGIS.</p>
+    <button class="cta" id="open-chat">Discuter avec l'assistant</button>
+  </div>
+</main>
+
+<footer id="contact">
+  <b>ESGIS Bénin</b> · Boulevard de l'Ouémé, Jéricho, Cotonou (en face de la BIIC)<br>
+  +229 21 32 47 73 · +229 61 27 13 13 · esgis.benin@esgis.org
+  <p>Assistant non officiel, projet étudiant. Pour toute information officielle, contactez le secrétariat.</p>
+</footer>
+
+<button id="chat-button" aria-label="Ouvrir l'assistant">💬</button>
+<section id="chat-window" hidden aria-label="Assistant ESGIS">
+  <div class="ch"><b>Assistant ESGIS</b><span><button id="chat-reset">Nouvelle conversation</button><button id="chat-close" aria-label="Fermer">✕</button></span></div>
+  <div id="messages"></div>
+  <form id="chat-form"><input id="chat-input" placeholder="Écrivez votre question…" autocomplete="off" aria-label="Votre message"><button>Envoyer</button></form>
+</section>
+
+<script src="faq-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
